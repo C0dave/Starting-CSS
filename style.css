@@ -1,0 +1,262 @@
+/*Estos son comentarios sirven para poner un titulo a un codigo como el titulo de abajo "colores"*/
+
+/*Colores*/
+.p1{
+    color: aqua;
+}
+.p2{
+    color: #f5f;
+}
+
+/*Background*/
+.p1{
+    background-color: #f93f89;
+}
+.p2{
+    background-color: hsl(70, 100%, 23%);
+}
+.he1{
+    color: aquamarine;
+    background-image: url(descarga.jpg);
+    background-repeat: repeat-x;
+    background-position: top;
+}
+body{
+    background-image: url(descarga2.0.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+/*Bordes*/
+.he1{
+    border: 5px solid cornflowerblue;
+    border-bottom-style: dashed;
+    border-left-style: dotted;
+    border-top-style: double;
+    border-right-style: groove;
+}
+.he2{
+    background-color: tomato;
+    color: white;
+    border: 5px solid teal;
+    border-bottom-style: initial;
+    border-left-style: inset;
+    border-right-style: outset;
+    border-top-style: ridge;
+}
+/*Margin*/
+.he2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/*Padding*/
+.he2{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 90px;
+    padding-right: 10px;
+}
+/*Height y width*/
+.he3{
+    background-color: turquoise;
+    color: antiquewhite;
+    height: 50px;
+    width: 500px;
+}
+/*Alineacion de texto*/
+.he3{
+    text-align: center;
+}
+/*Decoracion de texto*/
+.he3{
+    text-decoration: line-through;
+}
+.he2{
+    text-decoration: overline;
+}
+.he1{
+    text-decoration: underline;
+}
+/*transformacion de texto*/
+.he1{
+    text-transform: capitalize;
+}
+.he2{
+    text-transform: lowercase;
+}
+.he3{
+    text-transform: uppercase;
+}
+/*Espaciado de texto*/
+.he4{
+    background-color: cadetblue;
+    color: indigo;
+    text-indent: 48px;
+    letter-spacing: -1px;
+    line-height: 40px
+}
+/*TextShadow*/
+.he4{
+    text-shadow: 2px  3px black;
+}
+.he2{
+    text-shadow: 3px 6px black;
+}
+/*Fuentes*/
+.he1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.he2{
+    font-style: italic;
+    font-size: xx-large;
+}
+/*Iconos*/
+.material-icons{
+    color: rgb(66, 17, 17);
+}
+/*Enlaces*/
+.Enlace{
+    background-color: aquamarine;
+    padding: 25px;
+    text-decoration: none;
+    border: 2px solid black;
+}
+/*listas*/
+ul{
+    list-style-type: square;
+    list-style-position: outside;
+    background-color: #f93f89;
+    width: 100px;
+}
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: rgb(80, 75, 75);
+}
+/*Visualisacion*/
+.texto{
+   background-color: antiquewhite; 
+   display: none; /*O tambien se puede usar...*/
+   visibility: hidden;
+}
+/*Position*/
+.divisor{
+    position: relative;
+    background-color: bisque;
+}
+.fabian_Ya_Se_Tiene_Que_Guardar{
+    background-color: tomato;
+}
+/*Overflow*/
+.tredi{
+    border: 2px solid black;
+    height: 50px;
+    width: 80px;
+    overflow: scroll;/*Scroll, Hidden, Visible*/
+    background-color: #f93f89;
+}
+/*Clear y float*/
+.tredi{
+    float: right;
+}
+.fabian_Ya_Se_Tiene_Que_Guardar{
+    clear: right;
+}
+/* Formularios*/
+form{
+    background-color: gray;
+    padding: 20px;
+    border: 2px solid rgb(87, 80, 80);
+    border-radius: 15px;
+    box-shadow: 10px 10px rgb(56, 53, 53);
+    margin-bottom: 100px;
+}
+input{
+    border-radius: 15px;
+    border-color: white;
+    text-align: center;
+    margin-left: 15px;
+}
+.liin{
+    margin-left: 40px;
+}
+.eiboton{
+    float: right;
+    padding: 10px;
+    border-radius: 15px;
+}
+/* !importante*/
+.myclass{
+    background-color: blueviolet;
+    background-color: aqua !important;
+    background-color: #f5f;
+}
+#myid{
+    color: aquamarine;
+    color: yellow !important;
+    color: coral;
+    background-color: darkgray;
+    background-color: darkgreen;
+    background-color: darkkhaki !important;
+}
+/* Funciones matematicas*/
+.Myp{
+    background-color: darkgoldenrod;
+    width: calc(100px + 100px);
+    height: max(50px, 30%);
+    padding: min(50px, 500%);
+}
+/* Esquinas redondeadas*/
+.Myp{
+    border-radius: 150px;
+}
+.myclass{
+    padding: 30px;
+    border-radius: 15px;
+}
+/* Bordes de imagen*/
+#myid{
+    padding: 30px;
+    border: 20px solid;
+    border-image: url(descarga.jpg) 30 round;
+}
+.divisa{
+    background-color: darkorange;
+    padding: 15px;
+    border: 20px solid;
+    border-image: url(descarga2.0.jpg) 100 stretch;
+}
+/* Backgrounds avanzados*/
+.Diva{
+    background-image: url(paper.jpg);
+    background-size: 110px 100px;
+    background-repeat: repeat;
+    background-origin: border-box;
+    background-clip: border-box;
+}
+/* Gradientes*/
+.he5{
+    background-image: linear-gradient(cornflowerblue, blueviolet);
+    padding: 15px;
+    color: aqua;
+}
+.he6{
+    color: aqua;
+    background-image: conic-gradient(blue, blueviolet, cornflowerblue);
+    padding: 20px;
+}
+/* Shadow*/
+.tjh{
+    text-shadow: 5px 5px 4px red;
+}
+.blarg{
+    border: 2px solid black;
+
+}
+
