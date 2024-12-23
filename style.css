@@ -28,6 +28,13 @@ body{
     background-attachment: fixed;
     font-family: sans-serif;
 }
+/* Media Queries*/
+@media screen and (max-width: 400px){
+    body{
+        background-image: linear-gradient(cornflowerblue, aquamarine);
+    }
+    
+}
 /*Bordes*/
 .he1{
     border: 5px solid cornflowerblue;
@@ -257,6 +264,242 @@ input{
 }
 .blarg{
     border: 2px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 15px 15px 15px rgb(36, 34, 34);
+}
+/* Efectos de texto*/
+.tetto{
+    border: 3px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tetto2{
+    border: 3px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+.tetto3{
+    border: 3px solid;
+    word-wrap: break-word;
+}
+.tetto4{
+    border: 2px solid;
+    word-break: keep-all;
+}
+.tetto5{
+    border: 2px solid;
+    word-break: break-all;
+}
+.tetto6{
+    border: 2px solid;
+    writing-mode: vertical-rl;
+}
+/* Transformaciones en 2D y 3D*/
+.Division{
+    border: 2px solid;
+    padding: 15px;
+    word-break: break-all;
+    background-color: aqua;
+    transform: rotate(15deg);
+}
+.Paragrafo{
+    border: 2px solid;
+    padding: 15px;
+    word-break: break-all;
+    background-color: darkseagreen;
+    transform: rotate(-15deg);
+}
+.Blarg2{
+    border: 2px solid;
+    padding: 15px;
+    word-break: break-all;
+    background-color: gainsboro;
+    transform: scale(1,2);
+}
+.po{
+    border: 2px solid;
+    padding: 15px;
+    word-break: break-all;
+    background-color: darkseagreen;
+    transform: skew(15deg, 15deg);
+}
+/* Transiciones*/
+.Cltose{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 1s, height 1s;
+}
+.Cltose:hover{
+    width: 200px;
+    height: 200px;
+}
+.jlo{
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(blue, purple);
+    transition: width 2s, height 2s, transform 2s;
+    text-align: center;
 
 }
+.jlo:hover{
+    height: 300px;
+    width: 300px;
+    transform: rotate(360deg);
+}
+/* Animaciones*/
+.jlo2{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    background-color: red;
+    animation-name: Tla;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    animation-iteration-count: 5;
+    animation-direction: alternate-reverse;
+}
+@keyframes Tla {
+    0%{background-color: red;width: 500px;}
+    25%{background-color: orange;}
+    35%{background-color: yellow;}
+    50%{background-color: green;}
+    75%{background-color: blue;}
+    100%{background-color: purple;}
+}
+.animation{
+    width: 200px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes example {
+    from {top: 0px; background-color: yellow;}
+    to {top: 200px;}
+}
+/* Estilos de imagenes*/
+.Imagen{
+    float: right;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 250px;
+    background-color: wheat;  
+    transition: transform 3s;  
+}
+.Imagen:hover{
+    opacity: 0.8;
+    transform: rotate(360deg);
+}
+/* Mask-Image*/
+.Imagen2{
+    margin-top: 150px;
+    margin-left: 380px;
+    -webkit-mask-image: url(descarga.jpg);
+    mask-image: url(descarga.jpg);
+}
+/* Buttons*/
+.btn{
+    background-color: cornflowerblue;
+    color: white;
+    width: 180px;
+    height: 90px;
+    float: left;
+    margin-bottom: 100px;
+    border: 2px solid cornflowerblue;
+    border-radius: 9px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+/* Paginacion*/
+.paginacion{
+    margin-top: 200px;
+    text-align: center;
+    border: 2px solid;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: x-large;
+}
+.paginacion a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+}
+.paginacion a:hover{
+    background-color: gray;
+}
+/* Multiples columnas*/
+.Columna{
+    margin-top: 50px;
+    column-count: 2;
+    column-gap: 30px;
+    column-rule-style: dashed;
+    column-rule-color: aquamarine;
+    column-span: all;
+    column-rule-width: 6px;
+    column-fill: balance;    
+}
+/* Interfaz de usuario*/
+.interftoz{
+    border: 2px solid;
+    padding: 20px;
+    resize: both;
+    overflow: auto;
+}
+.interftoz2{
+    border: 2px solid;
+    padding: 20px;
+    outline: 5px dashed pink;
+    outline-offset: 4px;
+}
+/* Variables*/
+:root{
+    --noinoi: cornflowerblue;
+    --tuxa: coral;
+    --fording: 20px;
+    --bolde: 2px dashed white;
+}
+.tuda{
+    background-color: var(--noinoi);
+    color: var(--tuxa);
+    padding: var(--fording);
+    border: var(--bolde);
+}
+/* Box sizing*/
+.jilo{
+    width: 300px;
+    height: 100px;
+    border: 2px solid;
+    box-sizing: border-box;
+}
+/* Flexbox*/
+.flex-container{
+    display: flex;
+    background-color: dodgerblue;
+    flex-direction: column;/* tambien esta column-reverse, row y row-reverse*/
+}
+.flex-container > div{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+
+
+
 
